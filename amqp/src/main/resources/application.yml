@@ -1,0 +1,18 @@
+spring:
+  profiles:
+#  TODO 默认使用 usage_message profile 用于提示在未指定 profile 时提示使用方法
+#    active: usage_message  # 默认值
+#    active: hello-world, sender, receiver  # hello-world 同时启动 send，receiver
+    active: work-queues, sender, receiver
+  rabbitmq:
+#  TODO
+    host:
+
+
+logging:
+  level:
+    org: error
+
+tutorial:
+  client:
+    duration: 10000
