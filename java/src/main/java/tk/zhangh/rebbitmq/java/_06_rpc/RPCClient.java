@@ -29,11 +29,10 @@ public class RPCClient {
     public String call(String message) throws IOException, InterruptedException {
         String corrId = UUID.randomUUID().toString();
         // replyTo：设置回调队列名称
-        AMQP.BasicProperties props =
-                new AMQP.BasicProperties.Builder().correlationId(corrId).replyTo(replyQueueName).build();
+        AMQP.BasicProperties props = new AMQP.BasicProperties.Builder().correlationId(corrId).replyTo(replyQueueName).build();
         channel.basicPublish("", requestQueueName, props, message.getBytes("UTF-8"));
 
-            final BlockingQueue<String> response = new ArrayBlockingQueue<>(1);
+        final BlockingQueue<String> response = new ArrayBlockingQueue<>(1);
         Consumer consumer = new DefaultConsumer(channel) {
             @Override
             public void handleDelivery(String consumerTag, Envelope envelope, AMQP.BasicProperties properties, byte[] body)
