@@ -3,10 +3,14 @@ spring:
 #  TODO 默认使用 usage_message profile 用于提示在未指定 profile 时提示使用方法
 #    active: usage_message  # 默认值
 #    active: hello-world, sender, receiver  # hello-world 同时启动 send，receiver
-    active: work-queues, sender, receiver
+#    active: work-queues, sender, receiver
+#    active: pub-sub, sender, receiver
+#    active: routing, sender, receiver
+#    active: topics, sender, receiver
+    active: rpc, server, client
   rabbitmq:
 #  TODO
-    host:
+    host: zh-home.tk
 
 
 logging:
