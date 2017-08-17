@@ -2,8 +2,8 @@
 
 ## amqp
 
-Rabbit MQ with Spring AMQP demo
+Rabbit MQ with Spring AMQP Demo
 
 ## java
 
-Rabbit MQ with Java demo
+Rabbit MQ with Java Demo
