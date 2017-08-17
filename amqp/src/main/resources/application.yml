@@ -1,13 +1,14 @@
 spring:
   profiles:
-#  TODO Ä¬ÈÏÊ¹ÓÃ usage_message profile ÓÃÓÚÌáÊ¾ÔÚÎ´Ö¸¶¨ profile Ê±ÌáÊ¾Ê¹ÓÃ·½·¨
-#    active: usage_message  # Ä¬ÈÏÖµ
-#    active: hello-world, sender, receiver  # hello-world Í¬Ê±Æô¶¯ send£¬receiver
+#  TODO é»˜è®¤ä½¿ç”¨ usage_message profile ç”¨äºæç¤ºåœ¨æœªæŒ‡å®š profile æ—¶æç¤ºä½¿ç”¨æ–¹æ³•
+#    active: usage_message  # é»˜è®¤å€¼
+#    active: hello-world, sender, receiver  # hello-world åŒæ—¶å¯åŠ¨ sendï¼Œreceiver
 #    active: work-queues, sender, receiver
 #    active: pub-sub, sender, receiver
 #    active: routing, sender, receiver
 #    active: topics, sender, receiver
-    active: rpc, server, client
+#    active: rpc, server, client
+    active: confirm, sender
   rabbitmq:
 #  TODO
     host: zh-home.tk

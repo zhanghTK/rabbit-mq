@@ -29,7 +29,7 @@ public class Sender3 {
         channel.addConfirmListener(new ConfirmListener() {
             @Override
             public void handleAck(long deliveryTag, boolean multiple) throws IOException {
-                System.out.println("ack, deliveryTag" + deliveryTag + ", multiple" + multiple);
+                System.out.println("ack, deliveryTag:" + deliveryTag + ", multiple:" + multiple);
             }
 
             @Override

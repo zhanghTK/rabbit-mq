@@ -15,11 +15,11 @@ public class App {
         ConnectionFactory factory = new ConnectionFactory();
         factory.setHost(RabbitConfig.HOST);
 
-
         new Sender(factory, count, exchangeName, queueName, routingKey).run();
 
         new Sender2(factory, count, exchangeName, queueName, routingKey).run();
 
         new Sender3(factory, count, exchangeName, queueName, routingKey).run();
+
     }
 }
