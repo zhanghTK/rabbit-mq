@@ -5,5 +5,5 @@ package tk.zhangh.rebbitmq.java;
  */
 public interface RabbitConfig {
     // todo
-    String HOST = "";
+    String HOST = "zh-home.tk";
 }
